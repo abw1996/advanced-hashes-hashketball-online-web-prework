@@ -323,12 +323,9 @@ def long_name_steals_a_ton?
         stats.each do |name, values|
           values.each do |value_type, num|
             if value_type == :steals
-              binding.pry
               if steal_count <= num
-                binding.pry
                 steal_count = num 
                 player_dat_steals = name
-                binding.pry
               end 
             end
           end
